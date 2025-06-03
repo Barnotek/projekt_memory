@@ -240,6 +240,6 @@ footer{
 }
 @media only screen and (max-width: 400px) and (max-height: 800px){
     #historia{
-        padding-top: 40vh;
+        padding-top: 70vh;
     }
 }
