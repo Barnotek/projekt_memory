@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+}
+header{
+    background-image: linear-gradient(135deg, #3a7bd5, #463275);
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+header h1{
+    margin-left: 1vw;
+    color: white;
+    text-shadow: 1.5px 1.5px 2px black;
+    letter-spacing: 0.2vw;
+}
+[alt=Memory]{
+    width: 11vh;
+    height: 15vh;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#logo{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+nav{
+    background-image: linear-gradient(135deg, #2b5ca8, #2e1d4f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 100%;
+}
+.nawigacja{
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+}
+nav a:hover{
+    color: gray;
+    text-shadow: 1px 1px 2px white;
+}
+nav a:active{
+    color: black;
+}
+section{
+    background-image: url(./zdjecia/brain-512758_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    height: 60vh;
+    width: 80%;
+    opacity: 80%;
+    border: 3px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+article h1{
+    width: 90%;
+    font-size: xx-large;
+}
+article p{
+    font-size: large;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 90%;
+    text-align: center;
+}
+article h2{
+    text-align: left;
+    width: 90%;
+    font-size: x-large;
+}
+article a{
+    color: black;
+}
+article a:active{
+    color: darkgray;
+    text-shadow: 1px 1px 2px white;
+}
+#zalety{
+    height: 25vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ol{
+    width: 90%;
+    text-align: left;
+    font-size: x-large;
+}
+footer{
+    border: 3px solid black;
+    height: 5vh;
+    color: white;
+    text-shadow: 1.5px 1.5px 2px black;
+    background-image: linear-gradient(135deg, #3a7bd5, #463275);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#historia p{
+    font-size: x-large;
+}
+@media only screen and (max-width: 1050px) and (min-width: 800px) and (max-height: 800px){
+    article h1{
+        font-size: x-large;
+    }
+    article h2{
+        font-size: larger;
+    }
+    article p{
+        font-size: medium;
+    }
+    ol{
+        font-size: larger;
+    }
+    #historia{
+        padding-top: 15vh;
+        overflow-y: scroll;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 600px) and (max-height: 1050px){
+    article h1{
+        font-size: x-large;
+    }
+    article h2{
+        font-size: larger;
+    }
+    article p{
+        font-size: medium;
+    }
+    ol{
+        font-size: larger;
+    }
+}
+@media only screen and (max-width: 700px) and (min-width: 600px) and (max-height: 1050px){
+    #historia{
+        overflow-y: scroll;
+        padding-top: 10vh;
+    }
+}
+@media only screen and (max-width: 800px) and (max-height: 400px){
+    #logo h1{
+        font-size: larger;
+    }
+    .nawigacja{
+        font-size: small;
+    }
+    footer{
+        font-size: small;
+    }
+    article{
+        overflow-y: scroll;
+        padding-top: 10vh;
+    }
+    article h1{
+        padding-top: 12vh;
+        font-size: larger;
+    }
+    article h2{
+        font-size: large;
+    }
+    article p{
+        font-size: small;
+    }
+    ol{
+        padding-top: 10vh;
+        font-size: large;
+    }
+    #historia{
+        padding-top: 75vh;
+    }
+}
+@media only screen and (max-width: 500px) and (max-height: 900px){
+    article h1{
+        font-size: larger;
+    }
+    article h2{
+        font-size: large;
+    }
+    article p{
+        font-size: small;
+    }
+    ol{
+        font-size: large;
+    }
+    #historia{
+        padding-top: 34vh;
+        overflow-y: scroll;
+    }
+}
+@media only screen and (max-width: 450px) and (max-height: 900px){
+    #historia{
+        padding-top: 45vh;
+        overflow-y: scroll;
+    }
+}
+@media only screen and (max-width: 1450px){
+    #historia p{
+        font-size: larger;
+    }
+}

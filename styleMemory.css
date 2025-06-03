@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}  
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#ab77f8 0%, #100349 100%);
+}
+#plansza{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 70vh;
+    height: 70vh;
+}
+.klocek{
+    background: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+    transition: 0.3s background-color, 0.3s box-shadow;
+    cursor: pointer;
+}
+.klocek:hover{
+    background-color: rgba(204, 204, 204, 0.301);
+    box-shadow: 0 1px 4px #00000033;
+}
+#wynik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 1.8vh;
+    width: 10vh;
+    height: 5vh;
+    border-radius: 20vw;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #00000033;
+}
+#przyciski{
+    display: flex;
+    flex-direction: row;
+}
+button{
+    display: block;
+    border: none;
+    border-radius: 20vw;
+    text-align: center;
+    width: 25vh;
+    height: 10vh;
+    margin: 3vh auto;
+    font-weight: bold;
+    font-size: 2vh;
+    color: #FFF;
+    background: black;
+    transition: 0.3s background-color, 0.3s box-shadow;
+    cursor: pointer;
+}
+button:hover{
+    background: rgb(135, 134, 136);
+    box-shadow: 0 2px 5px rgba(252, 252, 252, 0.4);
+}
+@media only screen and (max-width: 750px) and (min-height: 1000px){
+    #plansza{
+        width: 50vh;
+        height: 50vh;
+    }
+}
+@media only screen and (max-height: 600px) and (min-width: 900px){
+    #plansza{
+        width: 40vw;
+        height: 40vw;
+    }
+    #start{
+        width: 15vw;
+        height: 5vw;
+        font-size: 1.5vw;
+    }
+}
+@media only screen and (max-width: 800px) and (max-height: 400px){
+    #plansza{
+        margin-top: 3vw;
+        width: 45vw;
+        height: 35vw;
+    }
+    #start{
+        width: 20vw;
+        height: 5vw;
+        font-size: 1.5vw;
+    }
+    #powrot{
+        font-size: 3.5vh;
+    }
+    #wynik{
+        width: 10vw;
+        height: 4vw;
+        font-size: 1.8vw;
+    }
+}
+@media only screen and (max-width: 600px) and (max-height: 900px){
+    #plansza{
+        width: 45vh;
+        height: 45vh;
+    }
+    #przyciski{
+        flex-direction: column;
+    }
+}
